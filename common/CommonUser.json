@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "title": "CommonUser",
+  "description": "General definition schema of a User",
+  "type": "object",
+  "examples": [
+    {
+      "userId": "C-12345",
+      "userFirstName": "Arnav",
+      "userLastName": "Kumar",
+      "userAge": 25
+    }
+  ],
+  "required": [
+    "userId",
+    "userFirstName",
+    "userLastName"
+  ],
+  "properties": {
+    "userId": {
+      "type": "string",
+      "title": "CommonUserId",
+      "description": "Identifier for a common user",
+      "examples": [
+        "C-12345"
+      ]
+    },
+    "userFirstName": {
+      "type": "string",
+      "title": "UserFirstName",
+      "description": "First name for the common user",
+      "examples": [
+        "Arnav"
+      ]
+    },
+    "userLastName": {
+      "type": "string",
+      "title": "UserLastName",
+      "description": "Last name for the common user",
+      "examples": [
+        "Kumar"
+      ]
+    },
+    "userAge": {
+      "type": "integer",
+      "title": "UserAge",
+      "format": "int32",
+      "description": "Age of the common user",
+      "examples": [
+        "25"
+      ]
+    }
+  }
+}
