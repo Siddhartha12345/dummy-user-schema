@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "title": "PersonalUser",
+  "description": "Schema definition of a personal user",
+  "type": "object",
+  "examples": [
+    {
+      "commercialUserId": "CM-12345",
+      "commercialUserFirstName": "Siddhartha",
+      "commercialUserLastName": "Paul",
+      "commercialUserAge": 26,
+      "commercialUserAddress": {
+        "houseNo": "123",
+        "street": "XYZ street",
+        "city": "Ranchi",
+        "state": "Jharkhand",
+        "zipCode": "229110"
+      }
+    }
+  ],
+  "required": [
+    "commercialUserId",
+    "commercialUserFirstName",
+    "commercialUserLastName"
+  ],
+  "properties": {
+    "commercialUserId": {
+      "type": "string",
+      "title": "CommercialUserId",
+      "description": "Identifier for a commercial user",
+      "examples": [
+        "CM-12345"
+      ]
+    },
+    "commercialUserFirstName": {
+      "type": "string",
+      "title": "CommercialUserFirstName",
+      "description": "First name for the commercial user",
+      "examples": [
+        "Siddhartha"
+      ]
+    },
+    "commercialUserLastName": {
+      "type": "string",
+      "title": "CommercialUserLastName",
+      "description": "Last name for the commercial user",
+      "examples": [
+        "Paul"
+      ]
+    },
+    "commercialUserAge": {
+      "type": "integer",
+      "title": "CommercialUserAge",
+      "format": "int32",
+      "description": "Age of the commercial user",
+      "examples": [
+        "26"
+      ]
+    },
+    "commercialUserAddress": {
+      "type": "object",
+      "title": "CommercialUserAddress",
+      "description": "Address for the commercial user",
+      "$ref": "CommercialUserAddress.json"
+    }
+  }
+}
