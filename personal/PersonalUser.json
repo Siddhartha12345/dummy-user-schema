@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "title": "PersonalUser",
+  "description": "Schema definition of a personal user",
+  "type": "object",
+  "examples": [
+    {
+      "personalUserId": "P-12345",
+      "personalUserFirstName": "Siddhartha",
+      "personalUserLastName": "Paul",
+      "personalUserAge": 26,
+      "personalUserHobbies": ["Sketching", "Playing Cricket"]
+    }
+  ],
+  "required": [
+    "personalUserId",
+    "personalUserFirstName",
+    "personalUserLastName"
+  ],
+  "properties": {
+    "personalUserId": {
+      "type": "string",
+      "title": "PersonalUserId",
+      "description": "Identifier for a personal user",
+      "examples": [
+        "P-12345"
+      ]
+    },
+    "personalUserFirstName": {
+      "type": "string",
+      "title": "PersonalUserFirstName",
+      "description": "First name for the personal user",
+      "examples": [
+        "Siddhartha"
+      ]
+    },
+    "personalUserLastName": {
+      "type": "string",
+      "title": "PersonalUserLastName",
+      "description": "Last name for the personal user",
+      "examples": [
+        "Paul"
+      ]
+    },
+    "personalUserAge": {
+      "type": "integer",
+      "title": "PersonalUserAge",
+      "format": "int32",
+      "description": "Age of the personal user",
+      "examples": [
+        "26"
+      ]
+    },
+    "personalUserHobbies": {
+      "type": "array",
+      "uniqueItems": true,
+      "title": "PersonalUserHobbies",
+      "description": "Set of hobbies for the personal user",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

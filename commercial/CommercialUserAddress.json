@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "title": "CommercialUserAddress",
+  "description": "Address schema definition of a commercial user",
+  "type": "object",
+  "examples": [
+    {
+      "houseNo": "123",
+      "street": "XYZ street",
+      "city": "Ranchi",
+      "state": "Jharkhand",
+      "zipCode": "229110"
+    }
+  ],
+  "required": [
+    "houseNo",
+    "street",
+    "city",
+    "state",
+    "zipCode"
+  ],
+  "properties": {
+    "houseNo": {
+      "type": "string",
+      "title": "HouseNumber",
+      "description": "House number for the commercial user",
+      "examples": [
+        "123"
+      ]
+    },
+    "street": {
+      "type": "string",
+      "title": "Street",
+      "description": "Street info for the commercial user",
+      "examples": [
+        "XYZ street"
+      ]
+    },
+    "city": {
+      "type": "string",
+      "title": "City",
+      "description": "City info for the commercial user",
+      "examples": [
+        "Ranchi"
+      ]
+    },
+    "state": {
+      "type": "string",
+      "title": "State",
+      "description": "State info for the commercial user",
+      "examples": [
+        "Jharkhand"
+      ]
+    },
+    "zipCode": {
+      "type": "string",
+      "title": "ZipCode",
+      "description": "Zip code info for the commercial user",
+      "examples": [
+        "229110"
+      ]
+    }
+  }
+}
